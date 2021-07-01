@@ -1,0 +1,9 @@
+.sign-out {
+  border-radius: 50% 50%;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: #74cccf;
+  cursor: pointer;
+  color: #d6e5e5;
+}
