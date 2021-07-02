@@ -4,14 +4,11 @@ import Input from '../Input/Input';
 import Message from '../Message/Message';
 import Loader from '../Loader/Loader';
 import firebase from 'firebase';
-import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { Context } from '../../index';
 
 function Chat({ user, loading }) {
   const { auth, firestore } = useContext(Context);
-  // const [user] = useAuthState(auth);
-  // const [user, loading] = useAuthState(auth);
   const [value, setValue] = useState('');
   const [messages] = useCollectionData(
     firestore.collection('messages').orderBy('createdAt'),

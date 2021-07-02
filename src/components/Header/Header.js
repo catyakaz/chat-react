@@ -2,14 +2,11 @@ import './Header.less';
 import Logo from '../../images/logo.png';
 import { Context } from '../../index';
 import React, { useContext } from 'react';
-// import { useAuthState } from 'react-firebase-hooks/auth';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import firebase from 'firebase';
 
 function Header() {
   const { auth } = useContext(Context);
-  // const [user] = useAuthState(auth);
-
   const history = useHistory();
 
   const login = async () => {
