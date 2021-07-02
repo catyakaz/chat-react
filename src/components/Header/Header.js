@@ -1,4 +1,4 @@
-import './Header.css';
+import './Header.less';
 import Logo from '../../images/logo.png';
 import { Context } from '../../index';
 import React, { useContext } from 'react';
@@ -8,7 +8,6 @@ import firebase from 'firebase';
 
 function Header() {
   const { auth } = useContext(Context);
-  // const [user] = useAuthState(auth);
 
   const history = useHistory();
 

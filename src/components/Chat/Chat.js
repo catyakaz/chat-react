@@ -1,4 +1,4 @@
-import './Chat.css';
+import './Chat.less';
 import React, { useContext, useState, useEffect } from 'react';
 import Input from '../Input/Input';
 import Message from '../Message/Message';
@@ -10,8 +10,6 @@ import { Context } from '../../index';
 
 function Chat({ user, loading }) {
   const { auth, firestore } = useContext(Context);
-  // const [user] = useAuthState(auth);
-  // const [user, loading] = useAuthState(auth);
   const [value, setValue] = useState('');
   const [messages] = useCollectionData(
     firestore.collection('messages').orderBy('createdAt'),
