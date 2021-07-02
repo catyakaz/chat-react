@@ -26,7 +26,6 @@ function Chat({ user, loading }) {
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
     });
 
-    console.log(value);
     setValue('');
   };
 
@@ -34,7 +33,6 @@ function Chat({ user, loading }) {
     setValue(e.target.value);
   };
 
-  console.log(loading);
   return (
     <div>
       {loading ? (
