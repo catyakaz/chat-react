@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Context } from '../../index';
 import firebase from 'firebase';
-import './Message.less';
+import './Message.css';
 
 function Message({ message, user }) {
   return (

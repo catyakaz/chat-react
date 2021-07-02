@@ -1,0 +1,16 @@
+.chat {
+  border-radius: 10% 10%;
+  border: 3px solid #ffffff;
+  width: 400px;
+  height: 400px;
+  margin-top: 20px;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.chat__messages {
+  display: flex;
+  flex-direction: column;
+}
+.chat::-webkit-scrollbar {
+  display: none;
+}
