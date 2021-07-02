@@ -13,7 +13,11 @@ function App() {
   return (
     <div className="container">
       <Header />
-      { !loading && !user ? <Redirect to="/sign-in" /> : <Chat user={user} loading={loading} />  }
+      {!loading && !user ? (
+        <Redirect to="/sign-in" />
+      ) : (
+        <Chat user={user} loading={loading} />
+      )}
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import './Input.css';
+import './Input.less';
 import React from 'react';
 
 function Input({ value, handle, send }) {

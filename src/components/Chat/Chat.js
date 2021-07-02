@@ -1,4 +1,4 @@
-import './Chat.css';
+import './Chat.less';
 import React, { useContext, useState, useEffect } from 'react';
 import Input from '../Input/Input';
 import Message from '../Message/Message';
