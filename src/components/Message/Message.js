@@ -1,6 +1,4 @@
-import React, { useContext } from 'react';
-import { Context } from '../../index';
-import firebase from 'firebase';
+import React from 'react';
 import './Message.less';
 
 function Message({ message, user }) {

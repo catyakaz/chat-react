@@ -1,10 +1,9 @@
 import './Chat.less';
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState } from 'react';
 import Input from '../Input/Input';
 import Message from '../Message/Message';
 import Loader from '../Loader/Loader';
 import firebase from 'firebase';
-import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { Context } from '../../index';
 
@@ -40,9 +39,10 @@ function Chat({ user, loading }) {
           <div className="chat">
             <div className="chat__messages">
               {messages &&
-                messages.map((message) => (
-                  <Message user={user} key={message.id} message={message} />
-                ))}
+                messages.map((message) => {
+                    console.log(message)
+                  return (<Message user={user} key={message.createdAd} message={message} />)}
+                )}
             </div>
           </div>
 

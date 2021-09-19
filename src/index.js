@@ -7,15 +7,14 @@ import firebase from 'firebase';
 import { BrowserRouter } from 'react-router-dom';
 import 'firebase/firestore';
 
-// Initialize Firebase
 firebase.initializeApp({
-  apiKey: 'AIzaSyBjngyAkREt2J2s4YAd_uiApoQFnf5077c',
-  authDomain: 'chat-react-78b4d.firebaseapp.com',
-  projectId: 'chat-react-78b4d',
-  storageBucket: 'chat-react-78b4d.appspot.com',
-  messagingSenderId: '772822651175',
-  appId: '1:772822651175:web:9312107bf02c5eedb8d902',
-  measurementId: 'G-CBNZ2SZ3HW',
+      apiKey: "AIzaSyDEvbSwzsCAFKrYYS_cvRCafLr36WglvpY",
+      authDomain: "chat-react-1e21b.firebaseapp.com",
+      projectId: "chat-react-1e21b",
+      storageBucket: "chat-react-1e21b.appspot.com",
+      messagingSenderId: "60852711787",
+      appId: "1:60852711787:web:39844887a301032ea4dc2e",
+      measurementId: "G-88ZYY4YLDV"
 });
 
 export const Context = React.createContext(null);
@@ -33,7 +32,4 @@ ReactDOM.render(
   document.getElementById('root'),
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
