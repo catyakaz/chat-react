@@ -15,8 +15,13 @@ React, Less и firebase
 ```bash
 git clone
 ```
+2. Установить все зависимости
 
-2. Запустить проект 
+```bash
+npm install
+```
+
+3. Запустить проект 
 
 ```bash
 npm run start
